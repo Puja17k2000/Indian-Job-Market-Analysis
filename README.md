@@ -1,79 +1,84 @@
 # 📊 Indian Job Market Analysis
 
-![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
-![SQL](https://img.shields.io/badge/SQL-Analytics-orange?logo=mysql)
-![Power%20BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi\&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green)
+An end-to-end **Data Analytics project** analyzing hiring trends, salary patterns, company recruitment activity, locations, skills, and experience requirements across the Indian job market.
+
+**Python · SQL · Power BI · Pandas · SQLite**
 
 ---
 
 ## 📌 Project Overview
 
-The **Indian Job Market Analysis** project is an end-to-end Data Analytics portfolio project that analyzes hiring trends, salary patterns, company recruitment activity, and experience-level requirements across the Indian job market.
+The **Indian Job Market Analysis** project is an end-to-end Data Analytics portfolio project that transforms raw job listing data into meaningful business insights.
 
-The project combines **Python**, **SQL**, and **Power BI** to transform raw job listing data into meaningful business insights through data cleaning, exploratory data analysis, SQL querying, and interactive dashboard development.
+The project combines **Python, SQL, and Power BI** for data cleaning, exploratory data analysis, analytical querying, and interactive dashboard development.
 
-The interactive dashboard enables users to explore:
+The analysis focuses on:
 
-* 📈 Hiring trends across job roles
-* 🏢 Top hiring companies
-* 📍 Major hiring locations
-* 💰 Salary distribution and compensation trends
-* 👨‍💼 Experience-level analysis
+- 📈 Hiring trends and job demand
+- 🏢 Company-wise recruitment activity
+- 📍 Location-wise hiring patterns
+- 💰 Salary distribution and compensation trends
+- 👨‍💼 Experience-level requirements
+- 🛠️ In-demand skills
 
 ---
 
 ## 🎯 Project Objectives
 
-* Analyze job market trends across India.
-* Identify the most in-demand job roles.
-* Discover the leading hiring companies.
-* Analyze salary patterns using minimum and maximum salary data.
-* Compare opportunities across different experience levels.
-* Build an interactive Power BI dashboard for business insights.
+- Analyze job market trends across India.
+- Identify high-demand job roles and locations.
+- Discover leading hiring companies.
+- Analyze salary patterns using minimum and maximum salary data.
+- Compare opportunities across different experience levels.
+- Identify in-demand skills.
+- Build an interactive Power BI dashboard for business insights.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-* **Python** (Pandas, NumPy, Matplotlib)
-* **SQL (SQLite)**
-* **Power BI**
-* **Jupyter Notebook**
-* **Visual Studio Code**
-* **DB Browser for SQLite**
+| Tool | Purpose |
+|---|---|
+| **Python** | Data cleaning & exploratory analysis |
+| **Pandas** | Data manipulation |
+| **NumPy** | Numerical analysis |
+| **Matplotlib** | Data visualization |
+| **SQL** | Analytical querying |
+| **SQLite** | Database management |
+| **Power BI** | Interactive dashboard development |
+| **Jupyter Notebook** | Python analysis |
+| **DB Browser for SQLite** | SQL database analysis |
+| **VS Code** | Development environment |
 
 ---
 
 ## 📂 Project Structure
 ```
-Indian-Job-Market-Analysis
+## 📂 Project Structure
+
+```text
+Indian-Job-Market-Analysis/
 │
-├── Dataset
-│   ├── Indian_Job_Market_Cleaned.csv
+├── Dataset/
 │   ├── indian-job-market-dataset-2025.xlsx
 │   └── Top_20_Skills.csv
 │
-├── Documentation
+├── Documentation/
 │   └── Indian Job Market Analysis.pdf
 │
-├── Images
+├── Images/
 │   ├── company_salary_analysis.png
 │   ├── dashboard_overview.png
 │   └── salary_experience_analysis.png
 │
-├── PowerBI
+├── PowerBI/
 │   └── Indian_Job_Market_Analysis.pbix
 │
-├── Python
+├── Python/
 │   └── Job_Market_Analysis.ipynb
 │
-├── SQL
-│   ├── Indian_Job_Market_Analysis.sql
-│   └── indian_job_market.db
-│
-├── venv
+├── SQL/
+│   └── Indian_Job_Market_Analysis.sql
 │
 ├── .gitignore
 ├── LICENSE
@@ -83,7 +88,9 @@ Indian-Job-Market-Analysis
 ---
 
 ## 📊 Dashboard Preview
+
 ### 📌 Dashboard Overview
+
 
 ![Dashboard Overview](Images/dashboard_overview.png)
 
@@ -99,24 +106,27 @@ Indian-Job-Market-Analysis
 
 ## 🔍 Key Insights
 
-- **Total Job Listings:** 97,929 job postings were analyzed.
-- **Total Companies:** 18,623 unique companies were identified through SQL analysis.
-- **Top Hiring Location:** Bengaluru led the market with **16,823 job listings**, followed by Hyderabad with **7,669** and Pune with **6,   112**.
-- **Salary Distribution:** The majority of listings (**80,503**) were classified as Low Salary, followed by **11,504 Medium** and **5,351 High Salary** listings.
-- **Top Hiring Companies:** Identified the leading companies based on the number of job postings.
-- **Experience Analysis:** Compared hiring demand and salary patterns across Fresher, Mid-Level, and Senior roles.
-- **High-Paying Opportunities:** Identified the highest-paying job roles and companies based on maximum salary analysis.
+- **97,929 job listings** were analyzed to understand hiring patterns across the Indian job market.
+- **18,623 unique companies** were identified through SQL analysis.
+- **Bengaluru** was the leading hiring location with **16,823 job listings**, followed by **Hyderabad (7,669)** and **Pune (6,112)**.
+- **80,503 listings** were classified as Low Salary, compared with **11,504 Medium** and **5,351 High Salary** listings.
+- **Top hiring companies** were identified based on the volume of job postings.
+- Hiring demand and salary patterns were compared across **Fresher, Mid-Level, and Senior** roles.
+- **High-paying job opportunities** were identified using maximum salary analysis.
+- **Top in-demand skills** were extracted and analyzed from job postings.
 
 ---
 
 ## 🧹 Data Preparation
 
-The dataset was cleaned and prepared using Python before SQL analysis and Power BI visualization.
+The dataset was cleaned and prepared using **Python and Pandas** before SQL analysis and Power BI visualization.
+
+Key data preparation steps included:
 
 - Removed **247 duplicate records**.
 - Handled missing values in key columns.
 - Converted salary and experience fields to appropriate numeric data types.
-- Converted `jobUploaded` to a datetime format.
+- Converted `jobUploaded` to datetime format.
 - Created `SalaryCategory` to classify salary ranges.
 - Created `ExperienceLevel` to categorize jobs into **Fresher, Mid-Level, and Senior**.
 - Prepared the cleaned dataset for SQL analysis and Power BI reporting.
@@ -125,52 +135,103 @@ The dataset was cleaned and prepared using Python before SQL analysis and Power 
 
 ## 📈 Dashboard Features
 
-* Interactive KPI Cards
-* Job Role Analysis
-* Company-wise Hiring Analysis
-* Location-wise Hiring Trends
-* Salary Distribution
-* Experience Level Analysis
-* Clean and Interactive Power BI Dashboard
+The Power BI dashboard provides an interactive view of the Indian job market through:
+
+- 📌 Interactive KPI Cards
+- 💼 Job Role Analysis
+- 🏢 Company-wise Hiring Analysis
+- 📍 Location-wise Hiring Trends
+- 💰 Salary Distribution
+- 👨‍💼 Experience Level Analysis
+- 🛠️ Skills Analysis
+- 🎛️ Interactive filters and visualizations
 
 ---
 
 ## 🔄 Project Workflow
 
-1. **Data Collection** – Imported the Indian job market dataset.
-2. **Data Cleaning** – Cleaned missing values, removed duplicates, and corrected data types using Python.
-3. **Exploratory Data Analysis** – Analyzed job roles, locations, salary, companies, and experience levels.
-4. **SQL Analysis** – Stored the data in SQLite and performed analytical queries.
-5. **Power BI Development** – Built interactive dashboards to visualize hiring and salary trends.
-6. **Business Insights** – Identified key hiring patterns and salary trends across the Indian job market.
+```text
+Raw Dataset
+     ↓
+Python Data Cleaning
+     ↓
+Exploratory Data Analysis
+     ↓
+SQL Analysis
+     ↓
+Power BI Dashboard
+     ↓
+Business Insights
+
+Workflow Steps
+
+Data Collection – Imported the Indian job market dataset.
+Data Cleaning – Removed duplicates, handled missing values, and corrected data types using Python and Pandas.
+Exploratory Data Analysis – Analyzed job roles, locations, salaries, companies, experience levels, and skills.
+SQL Analysis – Performed analytical queries using SQLite to identify hiring and salary trends.
+Power BI Development – Built an interactive dashboard with KPIs, charts, filters, and business-focused visualizations.
+Business Insights – Identified key hiring patterns, salary trends, high-demand locations, and experience-level requirements.
+```
 
 ---
 
 ## 🚀 How to Run the Project
+```bash
+### 1. Clone the Repository
 
-1. Clone this repository.
-2. Open the Python notebook in the `Python` folder.
-3. Review the SQL queries in the `SQL` folder.
-4. Open the Power BI dashboard (`.pbix`) from the `PowerBI` folder.
-5. Explore the interactive dashboard and insights.
+git clone https://github.com/Puja17k2000/Indian-Job-Market-Analysis.git
+cd Indian-Job-Market-Analysis
+
+### 2. Python Analysis
+
+Open the Python notebook:
+
+[Job_Market_Analysis.ipynb](Python/Job_Market_Analysis.ipynb)
+
+Run the notebook using **Jupyter Notebook** or **VS Code**.
+
+### 3. SQL Analysis
+
+Open the SQL script:
+
+[Indian_Job_Market_Analysis.sql](SQL/Indian_Job_Market_Analysis.sql)
+
+The SQL queries can be executed using **SQLite** or **DB Browser for SQLite**.
+
+### 4. Power BI Dashboard
+
+Open the Power BI dashboard:
+
+[Indian_Job_Market_Analysis.pbix](PowerBI/Indian_Job_Market_Analysis.pbix)
+
+Open the file using **Power BI Desktop**.
+```
+---
+
+
+## 📄 Documentation
+
+The complete project report is available here:
+
+[Indian Job Market Analysis.pdf](Documentation/Indian%20Job%20Market%20Analysis.pdf)
+
+The report includes the project methodology, data preparation, analysis, dashboard development, and key findings.
 
 ---
 
 ## 👩‍💻 Author
 
-**Puja Kumari**
+### Puja Kumari
 
-Aspiring Data Analyst | Python | SQL | Power BI | Excel
+**Aspiring Data Analyst**
 
-**GitHub:**  
-https://github.com/Puja17k2000
+**Skills:** Python · SQL · Power BI · Excel · Data Analysis
 
-**Project Repository:**  
-https://github.com/Puja17k2000/Indian-Job-Market-Analysis
-
-**LinkedIn:**  
-https://www.linkedin.com/in/puja-k-231227277
+- **GitHub:** [Puja17k2000](https://github.com/Puja17k2000)
+- **LinkedIn:** [Puja Kumari](https://www.linkedin.com/in/puja-k-231227277)
 
 ---
 
 ⭐ If you found this project useful, consider giving this repository a star!
+
+
